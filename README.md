@@ -192,18 +192,16 @@ ________________________________________________________________________________
 
 ### AlertDialog Component Props
 
-| Prop       | Type     | Required | Description                                                                                                                                      |
-| ---------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `title`    | `string` | Yes      | Title text displayed inside the component.                                                                                                       |
-| `body`     | `string` | Yes      | Body text displayed inside the component.                                                                                                        |
-| `children` | `string` | Yes      | the child elements of the button component.                                                                                                      |
-| `status`   | `enum`   | Yes      | Specifies the visual theme – Options: `["default", "primary", "success", "warning", "defaultDark", "primaryDark", "successDark", "warningDark"]` |
-
-| `buttonVariant` | `enum` | Yes | Specifies the `Button`'s variant – Options: `["default", "primary", "success", "warning"]` |
-| `isOpen` | `boolean` | No | If `true`, the component is open; if `false`, the component isn't open. |
-| `onClose` | `function` | No | Called when the component is closed. |
-
-| `ariaLabel` | `string` | No | Accessibility label for screen readers, describing the purpose of the dialog. |
+| Prop            | Type       | Required | Description                                                                                                                                      |
+| --------------- | ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `title`         | `string`   | Yes      | Title text displayed inside the component.                                                                                                       |
+| `body`          | `string`   | Yes      | Body text displayed inside the component.                                                                                                        |
+| `children`      | `string`   | Yes      | The child elements of the button component.                                                                                                      |
+| `status`        | `enum`     | Yes      | Specifies the visual theme – Options: `["default", "primary", "success", "warning", "defaultDark", "primaryDark", "successDark", "warningDark"]` |
+| `buttonVariant` | `enum`     | Yes      | Specifies the `Button`'s variant – Options: `["default", "primary", "success", "warning"]`                                                       |
+| `isOpen`        | `boolean`  | No       | If `true`, the component is open; if `false`, the component isn't open.                                                                          |
+| `onClose`       | `function` | No       | Called when the component is closed.                                                                                                             |
+| `ariaLabel`     | `string`   | No       | Accessibility label for screen readers, describing the purpose of the dialog.                                                                    |
 
 ## Themes
 
