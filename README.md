@@ -147,7 +147,6 @@ import AlertDialog from "sync-components";
   buttonVariant="success"
   btnColor="#28a745"
   hoverColor="#218838"
-  onClick={() => alert("Success dialog opened")}
 >
   Show Success
 </AlertDialog>
@@ -164,7 +163,6 @@ ________________________________________________________________________________
   buttonVariant="warning"
   btnColor="#dc3545"
   hoverColor="#c82333"
-  onClick={() => alert("Error dialog opened")}
 >
   Show Error
 </AlertDialog>
@@ -198,16 +196,17 @@ ________________________________________________________________________________
 
 ### AlertDialog Component Props
 
-| Prop            | Type       | Required | Description                                                                                                                                      |
-| --------------- | ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `title`         | `string`   | Yes      | Title text displayed inside the component.                                                                                                       |
-| `body`          | `string`   | Yes      | Body text displayed inside the component.                                                                                                        |
-| `children`      | `string`   | Yes      | Specifies the child elements of the component.                                                                                                   |
-| `status`        | `enum`     | Yes      | Specifies the visual theme – Options: `["default", "primary", "success", "warning", "defaultDark", "primaryDark", "successDark", "warningDark"]` |
-| `btnColor`      | `string`   | Yes      | Specifies the `Button`'s color.                                                                                                                  |
-| `buttonVariant` | `enum`     | Yes      | Specifies the `Button`'s variant – Options: `["default", "primary", "success", "warning"]`                                                       |
-| `isOpen`        | `boolean`  | No       | If `true`, the component is open; if `false`, the component isn't open.                                                                          |
-| `onClose`       | `function` | No       | Called when the component is closed.                                                                                                             |
+| Prop       | Type     | Required | Description                                                                                                                                      |
+| ---------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `title`    | `string` | Yes      | Title text displayed inside the component.                                                                                                       |
+| `body`     | `string` | Yes      | Body text displayed inside the component.                                                                                                        |
+| `children` | `string` | Yes      | the child elements of the button component.                                                                                                      |
+| `status`   | `enum`   | Yes      | Specifies the visual theme – Options: `["default", "primary", "success", "warning", "defaultDark", "primaryDark", "successDark", "warningDark"]` |
+
+|  
+| `buttonVariant` | `enum` | Yes | Specifies the `Button`'s variant – Options: `["default", "primary", "success", "warning"]` |
+| `isOpen` | `boolean` | No | If `true`, the component is open; if `false`, the component isn't open. |
+| `onClose` | `function` | No | Called when the component is closed. |
 
 | `ariaLabel` | `string` | No | Accessibility label for screen readers, describing the purpose of the dialog. |
 
