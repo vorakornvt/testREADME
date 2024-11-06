@@ -55,9 +55,6 @@ A `Button` that allows the user to trigger an action when clicked. It comes with
 ```js
 import Button from 'sync-components';
 
-//Primary Button with Link and Custom Hover Color
-//Aria-Label: aria-label="Link to https://sync-documentation.onrender.com/" —
-
 <Button
   variant="primary"
   hoverColor="#1f56ec"
@@ -66,8 +63,14 @@ import Button from 'sync-components';
   Click Me
 </Button>
 
+
+____________________________________________________________________________________
+
+//BUTTON STATUS EXAMPLES:
 //Success Button with Click Handler (No Link)
 //Aria-Label: aria-label="Success Action"
+
+
 <Button
   variant="success"
   hoverColor="#1cd560"
@@ -148,6 +151,11 @@ import AlertDialog from "sync-components";
 >
   Show Success
 </AlertDialog>
+
+
+____________________________________________________________________________________
+
+//ALERTDIALOG STATUS EXAMPLES:
 
 <AlertDialog
   title="Error"
