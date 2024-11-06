@@ -77,24 +77,7 @@ import Button from 'sync-components';
   Success Action
 </Button>
 
-//Warning Button with Path and New Hover Color
-//Aria-Label: aria-label="Link to /internal-page"
-<Button
-  variant="warning"
-  hoverColor="#ef2929"
-  path="/internal-page"
->
-  Warning Link
-</Button>
 
-//Default Button with No Hover Color
-//Aria-Label: aria-label="Default Action"
-<Button
-  variant="default"
-  onClick={() => console.log("Default button clicked")}
->
-  Default Action
-</Button>
 
 
 _________________________________________________
@@ -143,28 +126,7 @@ ________________________________________________________________________________
   status="warning"
 />
 
-// Info Alert
-<Alert
-  title="Information"
-  body="Here is some important information for you."
-  status="info"
-/>
 
-// Custom Alert with auto-dismiss
-<Alert
-  title="Notice"
-  body="This alert will disappear after a few seconds."
-  status="info"
-
-/>
-
-// Alert with close button
-<Alert
-  title="Heads Up!"
-  body="You can dismiss this alert by clicking the close button."
-  status="warning"
-
-/>
 ```
 
 ### AlertDialog
@@ -199,30 +161,7 @@ import AlertDialog from "sync-components";
   Show Error
 </AlertDialog>
 
-<AlertDialog
-  title="Information"
-  body="This is just an informational message."
-  status="default"
-  buttonVariant="default"
-  btnColor="#17a2b8"
-  hoverColor="#138496"
-  onClick={() => alert("Information dialog opened")}
->
-  Show Info
-</AlertDialog>
 
-<AlertDialog
-  title="Warning"
-  body="Are you sure you want to leave without saving?"
-  status="warning"
-  buttonVariant="warning"
-  btnColor="#ffc107"
-  hoverColor="#e0a800"
-  path="/unsaved-changes"
-  onClick={() => alert("Warning dialog opened")}
->
-  Leave Without Saving
-</AlertDialog>
 
 ```
 
@@ -241,30 +180,24 @@ import AlertDialog from "sync-components";
 
 ### Alert Component Props
 
-| Prop          | Type       | Required | Description                                                               |
-| ------------- | ---------- | -------- | ------------------------------------------------------------------------- |
-| `children`    | `string`   | Yes      | Content to be displayed inside the alert.                                 |
-| `type`        | `string`   | No       | Alert type. Options: `info`, `success`, `warning`, `error`.               |
-| `onClose`     | `function` | No       | Callback function triggered when the alert is closed.                     |
-| `isVisible`   | `boolean`  | No       | Controls visibility of the alert. Default is `true`.                      |
-| `autoDismiss` | `boolean`  | No       | Automatically dismisses the alert after a set time.                       |
-| `dismissTime` | `number`   | No       | Time in milliseconds before auto-dismiss (used if `autoDismiss` is true). |
+| Prop        | Type       | Required | Description                                                 |
+| ----------- | ---------- | -------- | ----------------------------------------------------------- |
+| `children`  | `string`   | Yes      | Content to be displayed inside the alert.                   |
+| `type`      | `string`   | No       | Alert type. Options: `info`, `success`, `warning`, `error`. |
+| `onClose`   | `function` | No       | Callback function triggered when the alert is closed.       |
+| `isVisible` | `boolean`  | No       | Controls visibility of the alert.                           |
 
 ---
 
 ### AlertDialog Component Props
 
-| Prop           | Type       | Required | Description                                                                   |
-| -------------- | ---------- | -------- | ----------------------------------------------------------------------------- |
-| `title`        | `string`   | Yes      | Title text of the alert dialog.                                               |
-| `description`  | `string`   | No       | Description text providing more details about the dialog.                     |
-| `isOpen`       | `boolean`  | Yes      | Controls whether the dialog is visible.                                       |
-| `onConfirm`    | `function` | Yes      | Callback function triggered on confirming action.                             |
-| `onCancel`     | `function` | No       | Callback function triggered on canceling action.                              |
-| `confirmLabel` | `string`   | No       | Label text for the confirm button. Default is "Confirm".                      |
-| `cancelLabel`  | `string`   | No       | Label text for the cancel button. Default is "Cancel".                        |
-| `variant`      | `string`   | No       | Dialog variant. Options: `default`, `danger`, `warning`.                      |
-| `ariaLabel`    | `string`   | No       | Accessibility label for screen readers, describing the purpose of the dialog. |
+| Prop          | Type      | Required | Description                                                                   |
+| ------------- | --------- | -------- | ----------------------------------------------------------------------------- |
+| `title`       | `string`  | Yes      | Title text of the alert dialog.                                               |
+| `description` | `string`  | No       | Description text providing more details about the dialog.                     |
+| `isOpen`      | `boolean` | Yes      | Controls whether the dialog is visible.                                       |
+| `variant`     | `string`  | No       | Dialog variant. Options: `default`, `danger`, `warning`.                      |
+| `ariaLabel`   | `string`  | No       | Accessibility label for screen readers, describing the purpose of the dialog. |
 
 ## Themes
 
@@ -289,7 +222,10 @@ import AlertDialog from "sync-components";
 
 ## Accessibility
 
-Each component has an `aria-label` and `title` to meet basic accessibility standards.
+## Accessibility
+
+- [ ] ARIA attributes implemented
+- [ ] Color contrast compliant
 
 ## License
 
