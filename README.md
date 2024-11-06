@@ -180,11 +180,11 @@ import AlertDialog from "sync-components";
 
 ### Alert Component Props
 
-| Prop     | Type       | Required | Description                                                 |
-| -------- | ---------- | -------- | ----------------------------------------------------------- |
-| `title`  | `string`   | Yes      | Content to be displayed inside the alert.                   |
-| `status` | `string`   | Yes      | Alert type. Options: `info`, `success`, `warning`, `error`. |
-| `body`   | `function` | No       | Callback function triggered when the alert is closed.       |
+| Prop     | Type     | Required | Description                                                                                                                    |
+| -------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `title`  | `string` | Yes      | Content to be displayed inside the alert.                                                                                      |
+| `status` | `string` | Yes      | Alert type. Options: `default`, `primary`, `success`, `warning`, `defaultDark`, `primaryDark`, `successDark`, `warningDark`, . |
+| `body`   | `string` | Yes      | Body text displayed inside the `Alert`                                                                                         |
 
 ---
 
