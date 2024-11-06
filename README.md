@@ -4,16 +4,11 @@ Add some flair to your projects by trying our dazzling yet practical Button & Al
 
 Check out our [documentation site](https://sync-documentation.onrender.com/) for visuals of our components.
 
-## Table of Contents
+## Table of Contents (Sticky)
 
 - [Installation](#installation)
-
 - [Usage](#usage)
-
-- [Demo](#demo)
-
 - [Props](#props)
-
 - [Customization](#customization)
 
 ## Installation
