@@ -67,15 +67,11 @@ import Button from 'sync-components';
 ____________________________________________________________________________________
 
 //BUTTON STATUS EXAMPLES:
-//Success Button with Click Handler (No Link)
-//Aria-Label: aria-label="Success Action"
-
 
 <Button
   variant="success"
   hoverColor="#1cd560"
   type = "submit"
-  onClick={() => alert("Button clicked!")}
 >
   Success Action
 </Button>
