@@ -197,6 +197,7 @@ ________________________________________________________________________________
 | `title`         | `string`   | Yes      | Title text displayed inside the component.                                                                                                       |
 | `body`          | `string`   | Yes      | Body text displayed inside the component.                                                                                                        |
 | `children`      | `string`   | Yes      | The child elements of the button component.                                                                                                      |
+| `btnColor`      | `string`   | Yes      | Specifies the `X close button`'s color.                                                                                                          |
 | `status`        | `enum`     | Yes      | Specifies the visual theme – Options: `["default", "primary", "success", "warning", "defaultDark", "primaryDark", "successDark", "warningDark"]` |
 | `buttonVariant` | `enum`     | Yes      | Specifies the `Button`'s variant – Options: `["default", "primary", "success", "warning"]`                                                       |
 | `isOpen`        | `boolean`  | No       | If `true`, the component is open; if `false`, the component isn't open.                                                                          |
