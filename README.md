@@ -180,24 +180,28 @@ import AlertDialog from "sync-components";
 
 ### Alert Component Props
 
-| Prop        | Type       | Required | Description                                                 |
-| ----------- | ---------- | -------- | ----------------------------------------------------------- |
-| `children`  | `string`   | Yes      | Content to be displayed inside the alert.                   |
-| `type`      | `string`   | No       | Alert type. Options: `info`, `success`, `warning`, `error`. |
-| `onClose`   | `function` | No       | Callback function triggered when the alert is closed.       |
-| `isVisible` | `boolean`  | No       | Controls visibility of the alert.                           |
+| Prop     | Type       | Required | Description                                                 |
+| -------- | ---------- | -------- | ----------------------------------------------------------- |
+| `title`  | `string`   | Yes      | Content to be displayed inside the alert.                   |
+| `status` | `string`   | Yes      | Alert type. Options: `info`, `success`, `warning`, `error`. |
+| `body`   | `function` | No       | Callback function triggered when the alert is closed.       |
 
 ---
 
 ### AlertDialog Component Props
 
-| Prop          | Type      | Required | Description                                                                   |
-| ------------- | --------- | -------- | ----------------------------------------------------------------------------- |
-| `title`       | `string`  | Yes      | Title text of the alert dialog.                                               |
-| `description` | `string`  | No       | Description text providing more details about the dialog.                     |
-| `isOpen`      | `boolean` | Yes      | Controls whether the dialog is visible.                                       |
-| `variant`     | `string`  | No       | Dialog variant. Options: `default`, `danger`, `warning`.                      |
-| `ariaLabel`   | `string`  | No       | Accessibility label for screen readers, describing the purpose of the dialog. |
+| Prop            | Type       | Required | Description                                                                                                                                      |
+| --------------- | ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `title`         | `string`   | Yes      | Title text displayed inside the component.                                                                                                       |
+| `body`          | `string`   | Yes      | Body text displayed inside the component.                                                                                                        |
+| `children`      | `string`   | Yes      | Specifies the child elements of the component.                                                                                                   |
+| `status`        | `enum`     | Yes      | Specifies the visual theme – Options: `["default", "primary", "success", "warning", "defaultDark", "primaryDark", "successDark", "warningDark"]` |
+| `btnColor`      | `string`   | Yes      | Specifies the `Button`'s color.                                                                                                                  |
+| `buttonVariant` | `enum`     | Yes      | Specifies the `Button`'s variant – Options: `["default", "primary", "success", "warning"]`                                                       |
+| `isOpen`        | `boolean`  | No       | If `true`, the component is open; if `false`, the component isn't open.                                                                          |
+| `onClose`       | `function` | No       | Called when the component is closed.                                                                                                             |
+
+| `ariaLabel` | `string` | No | Accessibility label for screen readers, describing the purpose of the dialog. |
 
 ## Themes
 
