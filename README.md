@@ -31,7 +31,7 @@ Run either of these commands inside the terminal:
 
 |                                Name                                |                              Version                              |
 | :----------------------------------------------------------------: | :---------------------------------------------------------------: |
-| [`@holmesdev/sync`](https://www.npmjs.com/package/sync-components) | [![NPM](https://img.shields.io/npm/v/:@holmesdev/sync/v/1.0.2)]() |
+| [`@holmesdev/sync`](https://www.npmjs.com/package/sync-components) | [![NPM](https://www.npmjs.com/package/@holmesdev/sync/v/1.0.3)]() |
 
 Install the latest package version if required:
 
@@ -229,8 +229,8 @@ ________________________________________________________________________________
 
 ## Accessibility
 
-- [ ] ARIA attributes implemented
-- [ ] Color contrast compliant
+- ARIA attributes implemented
+- Color contrast compliant
 
 ## License
 
