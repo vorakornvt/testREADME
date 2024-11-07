@@ -29,9 +29,9 @@ Run either of these commands inside the terminal:
 
 ## Latest Package Version
 
-|                                Name                                |                              Version                              |
-| :----------------------------------------------------------------: | :---------------------------------------------------------------: |
-| [`@holmesdev/sync`](https://www.npmjs.com/package/sync-components) | [![NPM](https://www.npmjs.com/package/@holmesdev/sync/v/1.0.3)]() |
+|                                Name                                |      Version      |
+| :----------------------------------------------------------------: | :---------------: |
+| [`@holmesdev/sync`](https://www.npmjs.com/package/sync-components) | [![NPM](1.0.4)]() |
 
 Install the latest package version if required:
 
